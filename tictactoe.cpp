@@ -138,9 +138,9 @@ int TicTacToe::minimaxAlgorithm(state grid, int player, int depth){
 	}
 
 	//set marking coordinates to arbitrary low values
-	int markingI = -420;
-	int markingJ = -420;
-	int maxScore = -420;
+	int markingI = -1000;
+	int markingJ = -1000;
+	int maxScore = -1000;
 
 	for (int i = 0; i < 3; ++i){
 		for (int j = 0; j < 3; ++j){
@@ -162,16 +162,16 @@ int TicTacToe::minimaxAlgorithm(state grid, int player, int depth){
 	}
 
 	//if marking coordinates did not change, return 0 (for tie)
-	if (markingI == -420 || markingJ == -420) return 0;
+	if (markingI == -1000 || markingJ == -1000) return 0;
 	//else return score of this path
 	return maxScore - depth;
 }
 
 //starts the minimax algorithm and makes the move that returns the best path
 void TicTacToe::compTurn(){
-	int markingI = -420;
-	int markingJ = -420;
-	int maxScore = -420;
+	int markingI = -1000;
+	int markingJ = -1000;
+	int maxScore = -1000;
 
 	for (int i = 0; i < 3; ++i){
 		for (int j = 0; j < 3; ++j){
@@ -207,7 +207,7 @@ int main(){
 	cout << "  |   |  |   | |     |      |   |  |       ||     |      |   |  |  |_|  ||    ___|" << endl;
 	cout << "  |   |  |   | |     |_     |   |  |   _   ||     |_     |   |  |       ||   |___ " << endl;
 	cout << "  |___|  |___| |_______|    |___|  |__| |__||_______|    |___|  |_______||_______|" << endl;
-	cout << "                                                                           v.4.20 " << endl; 
+	cout << "                                                                           v.1.00 " << endl; 
 	
 	//output key for tic tac toe coordinates
 	cout << "\n\t\t\t\ty\n\n";
