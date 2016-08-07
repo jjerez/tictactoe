@@ -1,13 +1,6 @@
 Jeffrey Jerez, Bradley Shiver
-COP 4930 - Intro to AI Spring 2015
-Final Project
+Intro to AI  Final Project
 Tic Tac Toe Using the Minimax Algorithm
-
-/--- Included
-
-tictactoe.cpp 						// source code
-jjerez_bshiver_project report.docx 	// final report
-README.txt
 
 /--- How to run
 
